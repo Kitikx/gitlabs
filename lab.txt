@@ -1,6 +1,6 @@
 int main{
 psfsfíà 1
-
+//Kraka-ZYABRA
 int x=1;
 return 0;
 }
