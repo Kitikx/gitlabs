@@ -1,6 +1,23 @@
-int main{
-psfsfíà 1
-//Kraka-ZYABRA
-int x=1;
-return 0;
+void SortMass(int*, int);
+ 
+int main (void)
+{
+    int N = 0;
+    printf("Enter N: ");
+    scanf("%d", &N);
+    int* m = (int*)malloc(N);
+    srand(time(0));
+    for(int i = 0; i < N; i++)
+    {
+            int x = rand()%100;
+            m[i] = x;
+            printf(" %d ", m[i]);
+    }
+    printf("\n");
+    SortMass(m, N);
+    printf("After sort\n");
+    for(int i = 0; i < N; i++)
+      printf(" %d ", m[i]);
+    free(m);  
+    getch();
 }
